@@ -2,7 +2,7 @@ import React from 'react';
 import StatsService from '../services/statsService.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Table} from 'react-bootstrap';
-import '../components/statsTable.css'
+import '../styles/statsTable.css'
 class StatsTable extends React.Component {
     constructor(props) {
         super(props);
@@ -12,12 +12,6 @@ class StatsTable extends React.Component {
     }
 
     componentWillUnmount() {
-    }
-
-    tick() {
-        this.setState({
-            date: new Date()
-        });
     }
 
     renderTableData() {

@@ -1,10 +1,10 @@
 import React from 'react';
-import StatsService from '../services/statsService.js';
+import StatsService from '../services/resourceRouter.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {DropdownButton, Dropdown, Table} from 'react-bootstrap';
 import '../styles/statsTable.css';
 
-class StatsTable extends React.Component {
+class Top10Table extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -91,4 +91,4 @@ class StatsTable extends React.Component {
   }
 }
 
-export default StatsTable;
+export default Top10Table;
